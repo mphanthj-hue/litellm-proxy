@@ -6,4 +6,4 @@ ENV STORE_MODEL_IN_DB=False
 
 EXPOSE 4000
 
-CMD ["--config", "/app/config.yaml"]
+CMD ["--config", "/app/config.yaml", "--port", "4000"]
