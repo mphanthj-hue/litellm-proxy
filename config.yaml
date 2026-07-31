@@ -52,4 +52,5 @@ model_list:
 
 general_settings:
   master_key: sk-1234
-  database_url: "postgresql://llmproxy:dbpassword9090@db:5432/litellm"
+  # database_url is only needed when STORE_MODEL_IN_DB=true
+  # For Railway (no postgres), leave unset and set STORE_MODEL_IN_DB=False in Dockerfile
